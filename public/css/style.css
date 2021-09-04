@@ -1,7 +1,8 @@
 body, html {
   font-family: "Roboto", sans-serif;
-  width: 480px;
+  max-width: 480px;
   text-align: center;
+  margin: 0.5rem;
 }
 
 h1, h2, h3, h4 {
@@ -13,36 +14,43 @@ h1, h2, h3, h4 {
 }
 
 .explanation__list__ol {
+  list-style: none;
+  counter-reset: item;
   margin-block: 0;
   padding-inline-start: 0.25rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-gap: 1rem;
-  counter-reset: orderedlist;
-  list-style-position: outside;
 }
 .explanation__list__ol li {
-  display: grid;
-  grid-template-columns: 0 1fr;
-  grid-gap: 1.75em;
-  align-items: center;
-  font-size: 1.5rem;
-  line-height: 1.25;
+  counter-increment: item;
+  margin: 0.5rem;
+  height: 75px;
+  width: 90%;
   background-color: #f6f6f6;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .explanation__list__ol li::before {
-  counter-increment: orderedlist;
-  content: counter(orderedlist);
-  font-size: 1.25em;
-  line-height: 0.75;
-  width: 1.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  color: #fff;
+  margin-left: -3rem;
+  content: counter(item);
+  color: white;
+  width: 25px;
+  height: 25px;
   background-color: #9356DC;
-  border-radius: 50em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resto__cards__card {
+  height: 250px;
+  width: 90%;
+  overflow: hidden;
+}
+.resto__cards__card__figure {
+  height: 175px;
 }
 
 /*# sourceMappingURL=style.css.map */
