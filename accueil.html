@@ -6,41 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo"><img src="/images/logo/ohmyfood@2x.svg" alt=""></div>
-        <div class="location"></div>
+        
     </header>
     <section class="container">
         <section class="intro">
-            <h1 class="intro__title"></h1>
-            <p class="intro__description"></p>
-            <div class="intro__button"></div>
+            <div class="intro__location">Paris, Belleville</div>
+            <h1 class="intro__title">Reservez le menu qui vous convient</h1>
+            <p class="intro__description">Découvrez des restaurants d'exception, <br/> selectionés par nos soins</p>
+            <div class="intro__button">Explorer nos restaurants</div>
         </section>
         <section class="explanation">
-            <h2 class="explanation__title"></h2>
-            <div class="explanation_list">
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <h2 class="explanation__title">Fonctionnement</h2>
+            <div class="explanation__list">
+                <ol role="list" class="explanation__list__ol">
+                    <li>
+                        <p>Choisissez un restaurant</p>
+                    </li>
+                    <li>
+                        <p>Composez votre menu</p>
+                    </li>
+                    <li>
+                        <p>Degustez au restaurant</p>
+                    </li>
                 </ol>
             </div>
         </section>
         <section class="resto">
-            <h2 class="resto__title"></h2>
+            <h2 class="resto__title">Restaurants</h2>
             <div class="resto__cards">
                 <div class="resto__cards__card">
                     <figure class="resto__cards__card__figure">
                         <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <p>Nouveau</p>
                     </figure>
                     <div class="resto__cards__card__caption">
                         <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name"></h3>
-                            <p class="resto__cards__card__caption__text__location"></p>
+                            <h3 class="resto__cards__card__caption__text__name">La palette du goût</h3>
+                            <p class="resto__cards__card__caption__text__location">Ménilmontant</p>
                         </div>
                         <div class="resto__cards__card__caption__fave"></div>
                     </div>
@@ -48,11 +56,12 @@
                 <div class="resto__cards__card">
                     <figure class="resto__cards__card__figure">
                         <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <p>Nouveau</p>
                     </figure>
                     <div class="resto__cards__card__caption">
                         <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name"></h3>
-                            <p class="resto__cards__card__caption__text__location"></p>
+                            <h3 class="resto__cards__card__caption__text__name">La note enchantée</h3>
+                            <p class="resto__cards__card__caption__text__location">Charonne</p>
                         </div>
                         <div class="resto__cards__card__caption__fave"></div>
                     </div>
@@ -63,8 +72,8 @@
                     </figure>
                     <div class="resto__cards__card__caption">
                         <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name"></h3>
-                            <p class="resto__cards__card__caption__text__location"></p>
+                            <h3 class="resto__cards__card__caption__text__name">À la française</h3>
+                            <p class="resto__cards__card__caption__text__location">Cité Rouge</p>
                         </div>
                         <div class="resto__cards__card__caption__fave"></div>
                     </div>
@@ -75,8 +84,8 @@
                     </figure>
                     <div class="resto__cards__card__caption">
                         <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name"></h3>
-                            <p class="resto__cards__card__caption__text__location"></p>
+                            <h3 class="resto__cards__card__caption__text__name">Le délice des sens</h3>
+                            <p class="resto__cards__card__caption__text__location">Folie-Méricourt</p>
                         </div>
                         <div class="resto__cards__card__caption__fave"></div>
                     </div>
@@ -84,6 +93,24 @@
             </div>
         </section>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer__logo">
+            <img src="/images/logo/ohmyfood@2x.svg" alt="">
+        </div>
+        <div class="footer__links">
+            <div class="footer__links--WIcons">
+                <p>Proposer un restaurant</p>
+            </div>
+            <div class="footer__links--WIcons">
+                <p>Devenir partenaire</p>
+            </div>
+            <div class="footer__links--WOIcons">
+                <p>Mentions Légales</p>
+            </div>
+            <div class="footer__links--WOIcons">
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

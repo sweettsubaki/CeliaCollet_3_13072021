@@ -1,3 +1,48 @@
+body, html {
+  font-family: "Roboto", sans-serif;
+  width: 480px;
+  text-align: center;
+}
 
+h1, h2, h3, h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+.intro__description {
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.explanation__list__ol {
+  margin-block: 0;
+  padding-inline-start: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 1rem;
+  counter-reset: orderedlist;
+  list-style-position: outside;
+}
+.explanation__list__ol li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1.75em;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  background-color: #f6f6f6;
+}
+.explanation__list__ol li::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  font-size: 1.25em;
+  line-height: 0.75;
+  width: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50em;
+}
 
 /*# sourceMappingURL=style.css.map */
