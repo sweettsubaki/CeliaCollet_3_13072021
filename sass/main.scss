@@ -57,10 +57,42 @@ $grey-bg: #f6f6f6;
 //START Explanation
 
 .resto__cards__card {
-    height: 250px;
-    width: 90%;
+
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
+    background-color: #ffffff;
     overflow: hidden;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    height: 250px;
+    width: 335px;
+    position: relative;
     &__figure {
-        height: 175px;
+        margin-block: 0rem;
+        margin-inline: 0rem;
+        object-fit: fill;
+        max-height: 175px;
+        width: 100%;
+        border-radius: 2rem 2rem 0rem 0rem;
+    }
+    &__caption {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+        background-color: #ffffff;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            &__name {
+                margin-block: 0rem;
+            }
+        }
+    }
+    .new {
+        position: absolute;
+        top: 0;
+        right: 5%;
     }
 }

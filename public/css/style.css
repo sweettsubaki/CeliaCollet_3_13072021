@@ -45,12 +45,43 @@ h1, h2, h3, h4 {
 }
 
 .resto__cards__card {
-  height: 250px;
-  width: 90%;
+  border-radius: 2rem 2rem 2rem 2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.13);
+  background-color: #ffffff;
   overflow: hidden;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  height: 250px;
+  width: 335px;
+  position: relative;
 }
 .resto__cards__card__figure {
-  height: 175px;
+  margin-block: 0rem;
+  margin-inline: 0rem;
+  object-fit: fill;
+  max-height: 175px;
+  width: 100%;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+.resto__cards__card__caption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #ffffff;
+}
+.resto__cards__card__caption__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.resto__cards__card__caption__text__name {
+  margin-block: 0rem;
+}
+.resto__cards__card .new {
+  position: absolute;
+  top: 0;
+  right: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
