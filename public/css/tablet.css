@@ -1,0 +1,10 @@
+.resto__cards {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+}
+.resto__cards__card {
+  width: 90%;
+}
+
+/*# sourceMappingURL=tablet.css.map */

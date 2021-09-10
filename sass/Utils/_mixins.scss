@@ -1,0 +1,3 @@
+@mixin light-primary($color: $primary) {
+    background-color: lighten($color, $amount: 30%);
+}

@@ -1,16 +1,40 @@
+/*
+@media (min-width:481px) and (max-width:1024px) {
+    body {
+    width: 100%
+    }
+    .resto__cards {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+        &__card {
+            width: 90%;
+        }
+    }
+}*/
 body, html {
   font-family: "Roboto", sans-serif;
   max-width: 480px;
   text-align: center;
-  margin: 0.5rem;
+  margin: 0rem;
 }
 
-h1, h2, h3, h4 {
+h1 {
   font-family: "Shrikhand", cursive;
 }
 
 .intro__description {
   padding: 0rem 2rem 0rem 2rem;
+}
+
+.intro__button {
+  height: 50px;
+  width: 50%;
+  font-weight: bold;
+  border-radius: 5rem;
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA);
+  color: #ffffff;
+  border: transparent 1px solid;
 }
 
 .explanation__list__ol {
@@ -43,14 +67,36 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
 }
+.explanation__list__ol li:nth-child(3) {
+  background-color: #e4d5f6;
+}
 
+.resto {
+  margin: 0rem;
+}
+.resto .resto__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media all and (min-width: 480px) and (max-width: tablet-laptop) {
+  .resto__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+  }
+  .resto__cards__card {
+    width: 90%;
+  }
+}
 .resto__cards__card {
   border-radius: 2rem 2rem 2rem 2rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.13);
   background-color: #ffffff;
   overflow: hidden;
   margin: 1rem;
-  padding-bottom: 1rem;
   height: 250px;
   width: 335px;
   position: relative;
@@ -58,12 +104,12 @@ h1, h2, h3, h4 {
 .resto__cards__card__figure {
   margin-block: 0rem;
   margin-inline: 0rem;
-  object-fit: fill;
   max-height: 175px;
   width: 100%;
   border-radius: 2rem 2rem 0rem 0rem;
 }
 .resto__cards__card__caption {
+  border: #ffffff 5px solid;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -74,6 +120,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .resto__cards__card__caption__text__name {
   margin-block: 0rem;
@@ -82,6 +129,46 @@ h1, h2, h3, h4 {
   position: absolute;
   top: 0;
   right: 5%;
+  padding: 7.5px;
+  width: 24%;
+  background-color: #99E2D0;
+  color: green;
+  font-size: small;
+  line-height: 10px;
+  text-align: center;
+}
+
+.footer {
+  text-align: start;
+  background-color: #353535;
+  color: #ffffff;
+  padding: 1rem;
+}
+.footer__logo {
+  filter: invert(100%);
+}
+.footer__links {
+  width: 80%;
+}
+.footer__links--WIcons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer__links--WIcons p {
+  margin: 1rem;
+}
+.footer__links--WOIcons {
+  /*a:hover
+  a:active*/
+}
+.footer__links--WOIcons a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__links--WOIcons a:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$mobile-tablet: 480px;
+$tablet-laptop: 1024px;
+$laptop-BGScreen: 1500px;
+
+$tablets: "all and (min-width: #{$mobile-tablet}) and (max-width: #{tablet-laptop})";
+
+
+
+/*
+@media (min-width:481px) and (max-width:1024px) {
+    body {
+    width: 100%
+    }
+    .resto__cards {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+        &__card {
+            width: 90%;
+        }
+    }
+}*/

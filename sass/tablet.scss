@@ -1,0 +1,8 @@
+.resto__cards {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    &__card {
+        width: 90%;
+    }
+}
