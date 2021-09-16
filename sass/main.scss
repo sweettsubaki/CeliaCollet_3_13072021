@@ -2,18 +2,26 @@
 @import 'Utils/variables.scss';
 @import 'Utils/mixins';
 @import 'Layouts/tablet.scss';
+@import 'Utils/keyframes.scss';
 
 body, html {
     font-family: 'Roboto', sans-serif;
     max-width: 480px;
     text-align: center;
     margin: 0rem;
+    cursor: pointer;
 }
 
 h1 {
     font-family: 'Shrikhand', cursive;
 }
+h2 {
+    text-transform: uppercase;
+}
 
+
+
+//START HOME PAGE
 
 //CONTAINER
 //START Intro
@@ -60,7 +68,7 @@ h1 {
             justify-content: center;
             align-items: center;
         }
-        &:nth-child(3) {
+        &:hover {
             @include light-primary;
         }
     }
@@ -110,7 +118,9 @@ h1 {
         justify-content: space-around;
         align-items: center;
         height: 75px;
+        width: 100%;
         background-color: #ffffff;
+        position: relative;
         &__text{
             display: flex;
             flex-direction: column;
@@ -135,12 +145,146 @@ h1 {
     }
 }
 
+//END HOMEPAGE
+
+
+//START MENU PAGE
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__card {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    overflow: hidden;
+    cursor: pointer;
+    animation: ApparitionTransition .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    max-width: 100%;
+    justify-content: space-around;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 12px 1px #000000;
+
+    &__text {
+        text-overflow: ellipsis;
+    }
+    
+    &__confirmation {
+        position: relative;
+        background-color: $tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        transition-duration: .5s;
+
+        &__check-circle {
+            position: absolute;
+            top: 35%;
+            left: 20%;
+            height: 1.6rem;
+            width: 1.6rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            transform: rotate(180deg);
+            transition-duration: .5s;
+        }
+    }
+    &:hover &__confirmation {
+        margin-right: -1rem;
+    }
+    
+    &:hover &__check-circle {
+        transform: rotate(-180deg);
+    }
+
+}
+.check-circle {
+    color: $tertiary;
+}
+//END MENU PAGE
+
+
+//ALL PAGES:
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+/*a:hover
+a:active*/
+
+
+.fave {
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+
+    &:hover::before {
+        opacity: 1;
+    }
+      
+    &::before {
+        opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(45deg, $primary 0%,$secondary 100%);
+    }
+
+    &__filledheart {
+        right: 0;
+        transition-duration: .25s;
+        background-color: #f6f6f6;
+        mix-blend-mode: lighten;
+    }
+    &__filledheart:hover {
+        animation: heart-ani 0.3s forwards;
+        background: linear-gradient(45deg, $primary, $secondary);
+        opacity: 1;
+    }
+    &__heart {
+        position: absolute;
+        right: 0;
+        transition-duration: .25s;
+        background-color: #f6f6f6;
+       
+        mix-blend-mode: lighten;
+        &:hover {
+            opacity: 0;
+
+        }
+    }
+}
+
 .footer {
     text-align: start;
     background-color: #353535;
     color: #ffffff;
     padding: 1rem;
-    &__logo{
+    &__logo {
         filter: invert(100%);
     } 
     &__links {
@@ -154,18 +298,16 @@ h1 {
             }
         }
         &--WOIcons {
-        a:link {
-            text-decoration: none;
-            color: #ffffff;
-        }
-        a:visited {
-            text-decoration: none;
-            color: #ffffff;
-        }
-        /*a:hover
-        a:active*/
-
+            a:link {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            a:visited {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            /*a:hover
+            a:active*/
         }
     }
-
 }
