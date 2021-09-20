@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 1024px)" href="public/css/tablet.css" />
+    <link rel="stylesheet" media="(min-width: 1025px) and (max-width: 1500px)" href="public/css/compscreen.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
 
    <section class="hero">
       <figure>
-         <img class="resto__cards__card__figure" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+         <img class="resto__cards__card__figure hero__figure" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
       </figure>
    </section>
 
@@ -43,11 +44,13 @@
          <h2 class="course-title">Entrées</h2>
          <div class="menu">
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name">Fricassée d'escargot</h3>
-                  <p class="menu__card__text__plate-description">Au piment d'espelette</p>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Fricassée d'escargot</h3>
+                     <p class="menu__card__caption__text__plate-description">Au piment d'espelette</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>25€</h3></div>
                </div>
-               <div class="menu__card__price"><h3>25€</h3></div>
                <div class="menu__card__confirmation">
                   <div class="menu__card__confirmation__check-circle">
                      <i class="fas fa-check check-circle"></i>
@@ -55,23 +58,35 @@
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name">Foie Gras de canard mi-cuit</h3>
-                  <p class="menu__card__text__plate-description">et ses copeaux de truffe noire</p>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Foie Gras de Canard Mi-Cuit</h3>
+                     <p class="menu__card__caption__text__plate-description">Et ses copeaux de truffe noire</p>
+                  </div>
+                  <div class="menu__card__caption__price">
+                     <h3>35€</h3>
+                  </div>
                </div>
-               <div class="menu__card__price"><h3>35€</h3></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name">Oeuf au plat</h3>
-                  <p class="menu__card__text__plate-description">Assaisonné à la truffe sur lit de</p>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Oeuf au plat</h3>
+                     <p class="menu__card__caption__text__plate-description">Assaisonné à la truffe sur lit de</p>
+                  </div>
+                  <div class="menu__card__caption__price">
+                     <h3 class="menu__card__caption__price__h3">20€</h3>
+                  </div>
                </div>
-               <div class="menu__card__price"><h3>20€</h3></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
          </div>
@@ -83,33 +98,45 @@
          <h2 class="course-title">Plats</h2>
          <div class="menu">
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Filet de boeuf aux herbes</h3>
+                     <p class="menu__card__caption__text__plate-description">Accompagné de sa ribembelle de légumes</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>40€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Parmentier de queue de boeuf</h3>
+                     <p class="menu__card__caption__text__plate-description">A la truffe noire sur sa purée de panais</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>35€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Filet de Turbot</h3>
+                     <p class="menu__card__caption__text__plate-description">Aux agrumes</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>44€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
          </div>
@@ -121,33 +148,45 @@
          <h2 class="course-title"></h2>
          <div class="menu">
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Paris-Brest</h3>
+                     <p class="menu__card__caption__text__plate-description">Revisité</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>18€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Macaron au chocolat d'exception</h3>
+                     <p class="menu__card__caption__text__plate-description">Et glace à la vanille de Madagascar</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>22€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
             <div class="menu__card">
-               <div class="menu__card__text">
-                  <h3 class="menu__card__text__plate-name"></h3>
-                  <h4 class="menu__card__text__plate-description"></h4>
+               <div class="menu__card__caption">
+                  <div class="menu__card__caption__text">
+                     <h3 class="menu__card__caption__text__plate-name">Mousse au chocolat</h3>
+                     <p class="menu__card__caption__text__plate-description">Au piment d'espelette et à la truffe noire</p>
+                  </div>
+                  <div class="menu__card__caption__price"><h3>22€</h3></div>
                </div>
-               <div class="menu__card__price"></div>
                <div class="menu__card__confirmation">
-                  <i class="fas fa-check-circle"></i>
+                  <div class="menu__card__confirmation__check-circle">
+                     <i class="fas fa-check check-circle"></i>
+                  </div>
                </div>
             </div>
          </div>
@@ -158,7 +197,7 @@
 
    <!--Start Ordering-->
    <section class="ordering">
-      <button class="order-button">Commander</button>
+      <button class="button ordering__button">Commander</button>
    </section>
    <!--End Ordering-->
 

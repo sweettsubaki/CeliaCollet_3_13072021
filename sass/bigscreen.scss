@@ -1,0 +1,173 @@
+@import 'Utils/variables.scss';
+@import 'Utils/mixins';
+@import 'Layouts/tablet.scss';
+@import 'Utils/keyframes.scss';
+/*body
+    header
+    container
+        intro
+        explanation
+        resto
+            resto__cards
+                resto__cards__card
+    footer    */
+body, html {
+   min-width: 501px;
+   text-align: left;
+}
+
+/*HOMEPAGE*/
+
+.intro {
+   margin-left: 0rem;
+   margin-bottom: 5rem;
+   height: 250px;
+   width: 100%;
+   &__location {
+      text-align: center;    
+      font-size: large;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+   }
+   &__desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      &__title {
+         font-family: 'Shrikhand', cursive;
+         margin-block: 0rem;
+         margin-top: 1rem;
+         margin-left: 22%;
+      }
+      &__description {
+         width: 50%;
+         padding: 0.5rem 2rem 0.5rem 2rem;
+         margin-left: 20%;
+         box-shadow: inset 0px 0px 15px 0px #c5c5c5;
+         border-radius: 1rem;
+         text-align: center;
+      }
+      &__button {
+         margin-left: 35%;            
+         width: 30%;
+         font-size: x-large;
+      }
+   }
+}
+
+.explanation__title, .resto__title {
+   margin-left: 5rem;
+}
+
+.explanation__list__ol {
+   margin-right: 1.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   overflow: hidden;
+   white-space: nowrap;
+   li {
+      width: 28%;
+   }
+}
+
+.resto {
+   width: 100%;
+   &__cards {
+      width: 100%;
+      display: flex !important;
+      flex-wrap: wrap;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      justify-content: center;
+      margin: 2rem;
+      margin-left: 0rem;
+      margin-top: 1rem;
+      &__card {
+         width: 260px;
+         height: 210px;
+         &__figure {
+            height: 145px;
+         }
+         &__caption {
+            height: 50px;
+            justify-content: space-between;
+            padding-left: 0.6rem;
+            &__text {
+               height: 90%;
+               justify-content: space-between;
+            }
+         }
+      }
+   }
+}
+
+/*Menu Page*/
+
+.hero {
+   &__figure {
+      border-radius: 2rem;
+      height: 500px !important;
+   }
+}
+
+.menu-header {
+   justify-content: space-between !important;
+   margin-left: 2rem;
+   margin-right: 2rem;
+}
+
+.course-title {
+   margin-left: 2rem;
+}
+
+.menu__card {
+   width: 85%;
+   margin: auto;
+   margin-bottom: 2rem;
+   &:hover {
+      @include light-primary($amount: 37%);
+   }
+}
+
+.ordering {
+   margin-bottom: 1rem;
+   text-align: center;
+}
+
+/*ALL PAGES*/
+
+h1 {
+   font-size: x-large;
+}
+
+header {
+   margin: 2rem;
+   margin-left: 3rem;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 2rem;
+
+   &__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+      white-space: nowrap;
+      &--WIcons {
+         width: 400px;
+      }
+      &--WOIcons {
+         width: 400px;
+         margin-left: 2rem;
+      }
+   }    
+}

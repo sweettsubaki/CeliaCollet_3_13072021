@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 1024px)" href="public/css/tablet.css" />
+    <link rel="stylesheet" media="all" href="/public/css/style.css">
+    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="public/css/tablet.css" />
+    <link rel="stylesheet" media="(min-width: 1025px) and (max-width: 1500px)" href="public/css/compscreen.css" />
+    <link rel="stylesheet" media="(min-width: 1501px)" href="public/css/bigscreen.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -23,9 +25,11 @@
         <!--Start Website Goal explanation-->
         <section class="intro">
             <div class="intro__location">Paris, Belleville</div>
-            <h2 class="intro__title">Reservez le menu qui vous convient</h2>
-            <p class="intro__description">Découvrez des restaurants d'exception, <br/> selectionés par nos soins</p>
-            <button class="intro__button">Explorer nos restaurants</button>
+            <div class="intro__desc">
+                <h2 class="intro__desc__title">Reservez le menu qui vous convient</h2>
+                <p class="intro__desc__description">Découvrez des restaurants d'exception, <br/> selectionés par nos soins</p>
+                <button class="button intro__desc__button">Explorer nos restaurants</button>
+            </div>
         </section>
         <!-- End Website Goal explanation-->
 
@@ -33,7 +37,7 @@
         <section class="explanation">
             <h2 class="explanation__title">Fonctionnement</h2>
             <div class="explanation__list">
-                <ol role="list" class="explanation__list__ol">
+                <ol class="explanation__list__ol">
                     <li>
                         <i class="fas fa-mobile-alt icon"></i>
                         <p class="explanation__list__ol__p">Choisissez un restaurant</p>
@@ -78,60 +82,60 @@
                 <!--Start 2nd card -->
                 <div class="resto__cards__card">
                     <a href="/lanoteenchantee.html">
-                    <div>
-                        <img  class="resto__cards__card__figure" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                        <p class="new">Nouveau</p>
-                    </div>
-                    <div class="resto__cards__card__caption">
-                        <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name">La note enchantée</h3>
-                            <p class="resto__cards__card__caption__text__location">Charonne</p>
+                        <div>
+                            <img  class="resto__cards__card__figure" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                            <p class="new">Nouveau</p>
                         </div>
-                        <div class="fave">
-                            <i class="fas fa-heart fave__filledheart"></i>
-                            <i class="far fa-heart fave__heart"></i>
+                        <div class="resto__cards__card__caption">
+                            <div class="resto__cards__card__caption__text">
+                                <h3 class="resto__cards__card__caption__text__name">La note enchantée</h3>
+                                <p class="resto__cards__card__caption__text__location">Charonne</p>
+                            </div>
+                            <div class="fave">
+                                <i class="fas fa-heart fave__filledheart"></i>
+                                <i class="far fa-heart fave__heart"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
                 <!--End 2nd card -->
                 <!--Start 3rd card -->
                 <div class="resto__cards__card">
                     <a href="/alafrancaise.html">
-                    <div>
-                        <img  class="resto__cards__card__figure" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                    </div>
-                    <div class="resto__cards__card__caption">
-                        <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name">À la française</h3>
-                            <p class="resto__cards__card__caption__text__location">Cité Rouge</p>
+                        <div>
+                            <img  class="resto__cards__card__figure" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                         </div>
-                        <div class="fave">
-                            <i class="fas fa-heart fave__filledheart"></i>
-                            <i class="far fa-heart fave__heart"></i>
+                        <div class="resto__cards__card__caption">
+                            <div class="resto__cards__card__caption__text">
+                                <h3 class="resto__cards__card__caption__text__name">À la française</h3>
+                                <p class="resto__cards__card__caption__text__location">Cité Rouge</p>
+                            </div>
+                            <div class="fave">
+                                <i class="fas fa-heart fave__filledheart"></i>
+                                <i class="far fa-heart fave__heart"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
                 <!--End 3rd card -->
                 <!--Start 4th card -->
                 <div class="resto__cards__card">
                     <a href="/ledelicedessens.html">
-                    <div>
-                        <img  class="resto__cards__card__figure" src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                    </div>
-                    <div class="resto__cards__card__caption">
-                        <div class="resto__cards__card__caption__text">
-                            <h3 class="resto__cards__card__caption__text__name">Le délice des sens</h3>
-                            <p class="resto__cards__card__caption__text__location">Folie-Méricourt</p>
+                        <div>
+                            <img  class="resto__cards__card__figure" src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                         </div>
-                        <div class="fave">
-                            <i class="fas fa-heart fave__filledheart"></i>
-                            <i class="far fa-heart fave__heart"></i>
+                        <div class="resto__cards__card__caption">
+                            <div class="resto__cards__card__caption__text">
+                                <h3 class="resto__cards__card__caption__text__name">Le délice des sens</h3>
+                                <p class="resto__cards__card__caption__text__location">Folie-Méricourt</p>
+                            </div>
+                            <div class="fave">
+                                <i class="fas fa-heart fave__filledheart"></i>
+                                <i class="far fa-heart fave__heart"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
                 <!--End 4th card -->
             </div>
         </section>

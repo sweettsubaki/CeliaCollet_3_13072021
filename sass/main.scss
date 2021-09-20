@@ -6,7 +6,7 @@
 
 body, html {
     font-family: 'Roboto', sans-serif;
-    max-width: 480px;
+    width: 480px;
     text-align: center;
     margin: 0rem;
     cursor: pointer;
@@ -18,25 +18,34 @@ h1 {
 h2 {
     text-transform: uppercase;
 }
+h3 {
+    margin: 0rem;
+    font-size: 15;
+}
 
+p {
+    margin: 0rem;
+    font-size: 14;
+}
 
 
 //START HOME PAGE
 
 //CONTAINER
 //START Intro
-.intro__description {
-    padding: 0rem 2rem 0rem 2rem;
+.intro {
+    margin: 1rem;
+    &__location {
+        @include grey-shades;
+    }
+    &__desc {
+        @include grey-shades ($amount: 98%);
+        &__description {
+            padding: 0rem 2rem 0rem 2rem;
+        }
+    }
 }
-.intro__button {
-    height: 50px;
-    width: 50%;
-    font-weight: bold;
-    border-radius: 5rem;
-    background: linear-gradient(to top, #{$primary} 0%, #{$secondary});
-    color: #ffffff;
-    border: transparent 1px solid;
-}
+
 //END INTRO
 //START EXPLANATION
 .explanation__list__ol {
@@ -108,7 +117,7 @@ h2 {
     &__figure {
         margin-block: 0rem;
         margin-inline: 0rem;
-        max-height: 175px;
+        height: 175px;
         width: 100%;
         border-radius: 2rem 2rem 0rem 0rem;
     }
@@ -149,6 +158,9 @@ h2 {
 
 
 //START MENU PAGE
+
+
+
 .menu-header {
     display: flex;
     justify-content: space-around;
@@ -156,25 +168,62 @@ h2 {
 }
 
 .menu__card {
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: .75rem;
-    margin: 1rem 0;
-    overflow: hidden;
-    cursor: pointer;
+    //transition
     animation: ApparitionTransition .6s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
-    max-width: 100%;
-    justify-content: space-around;
+    //box card
+    height: 70px;
+    width: 85%;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
     border-radius: 1rem;
-    box-shadow: 0px 0px 12px 1px #000000;
+    box-shadow: 0px 0px 12px -1px #000000;
+    //internal organisation
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
 
-    &__text {
+    &__caption {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 1rem;
+
+        &__text {
+            height: 95%;
+            max-width: 290px;
+            margin: 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &__plate-name {
+                margin: 0.5rem 0rem 0.5rem 0rem;
+                margin-block: 0rem;
+                max-width: max-content;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__plate-description {
+                margin: 0.5rem 0rem 0.5rem 0rem;
+                margin-block: 0rem;
+                max-width: max-content;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
-    
+
     &__confirmation {
         position: relative;
         background-color: $tertiary;
@@ -202,12 +251,18 @@ h2 {
     }
     
     &:hover &__check-circle {
-        transform: rotate(-180deg);
+        transform: rotate(0deg);
     }
-
 }
 .check-circle {
     color: $tertiary;
+}
+
+.ordering {
+    padding: 0rem 2rem 0.5rem 2rem;
+    &__button {
+        font-size: large;
+    }
 }
 //END MENU PAGE
 
@@ -224,6 +279,16 @@ a:visited {
 /*a:hover
 a:active*/
 
+
+.button {
+    height: 50px;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 5rem;
+    background: linear-gradient(to top, #{$primary} 0%, #{$secondary});
+    color: #ffffff;
+    border: transparent 1px solid;
+}
 
 .fave {
     position: absolute;

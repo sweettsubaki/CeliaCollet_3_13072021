@@ -38,25 +38,26 @@
                 resto__cards__card
     footer    */
 body, html {
-  width: 1024px;
+  min-width: 1024px;
+  width: 1500px;
   text-align: left;
 }
 
 /*HOMEPAGE*/
 .intro {
   margin-left: 0rem;
-  margin-bottom: 2.5rem;
-  height: 190px;
+  margin-bottom: 5rem;
+  height: 250px;
   width: 100%;
 }
 .intro__location {
   text-align: center;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 60px;
 }
 .intro__desc {
   display: flex;
@@ -68,7 +69,7 @@ body, html {
   font-family: "Shrikhand", cursive;
   margin-block: 0rem;
   margin-top: 1rem;
-  margin-left: 15%;
+  margin-left: 35%;
 }
 .intro__desc__description {
   width: 50%;
@@ -81,13 +82,15 @@ body, html {
 .intro__desc__button {
   margin-left: 35%;
   width: 30%;
+  font-size: x-large;
 }
 
 .explanation__title, .resto__title {
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
 .explanation__list__ol {
+  margin-right: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,7 +98,7 @@ body, html {
   white-space: nowrap;
 }
 .explanation__list__ol li {
-  width: 35%;
+  width: 28%;
 }
 
 .resto {
@@ -107,10 +110,13 @@ body, html {
   flex-wrap: wrap;
   flex-direction: row !important;
   align-items: flex-start !important;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 2rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
 }
 .resto__cards__card {
-  width: 240px;
+  width: 260px;
   height: 210px;
 }
 .resto__cards__card__figure {
@@ -170,20 +176,21 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .footer__links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   white-space: nowrap;
 }
 .footer__links--WIcons {
-  width: 275px;
+  width: 400px;
 }
 .footer__links--WOIcons {
-  width: 275px;
-  margin-left: 1rem;
+  width: 400px;
+  margin-left: 2rem;
 }
 
-/*# sourceMappingURL=tablet.css.map */
+/*# sourceMappingURL=compscreen.css.map */

@@ -1,3 +1,7 @@
-@mixin light-primary($color: $primary) {
-    background-color: lighten($color, $amount: 30%);
+@mixin light-primary($color: $primary, $amount: 30%) {
+    background-color: lighten($color, $amount);
+}
+
+@mixin grey-shades ($amount: 95.35%) {
+    background-color: lighten(#000, $amount);
 }
