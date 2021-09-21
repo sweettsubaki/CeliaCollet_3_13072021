@@ -2,6 +2,10 @@
     background-color: lighten($color, $amount);
 }
 
+@mixin border-primary($color: $primary, $amount: 30%) {
+    border: 5px outset lighten($color, $amount);
+}
+
 @mixin grey-shades ($amount: 95.35%) {
     background-color: lighten(#000, $amount);
 }

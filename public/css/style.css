@@ -12,6 +12,23 @@
         }
     }
 }*/
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes heart-ani {
   0% {
     opacity: 0;
@@ -28,12 +45,29 @@
     transform: scale(1);
   }
 }
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0);
+    transform-origin: right;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: right;
+  }
+}
 body, html {
   font-family: "Roboto", sans-serif;
-  width: 480px;
   text-align: center;
   margin: 0rem;
   cursor: pointer;
+}
+
+.loader {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: loader 2s infinite ease;
 }
 
 h1 {
@@ -170,6 +204,13 @@ p {
   text-align: center;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
 .menu-header {
   display: flex;
   justify-content: space-around;
@@ -246,14 +287,14 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
+  animation: rotate-right 2s 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .menu__card:hover .menu__card__confirmation {
   margin-right: -1rem;
 }
 .menu__card:hover .menu__card__check-circle {
   transform: rotate(0deg);
+  transition-duration: 0.5s;
 }
 
 .check-circle {
@@ -265,6 +306,9 @@ p {
 }
 .ordering__button {
   font-size: large;
+}
+.ordering__backward {
+  display: none;
 }
 
 a:link {

@@ -12,6 +12,23 @@
         }
     }
 }*/
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes heart-ani {
   0% {
     opacity: 0;
@@ -28,6 +45,16 @@
     transform: scale(1);
   }
 }
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0);
+    transform-origin: right;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: right;
+  }
+}
 /*body
     header
     container
@@ -38,7 +65,6 @@
                 resto__cards__card
     footer    */
 body, html {
-  width: 1024px;
   text-align: left;
 }
 
@@ -62,24 +88,22 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   height: 100%;
 }
 .intro__desc__title {
   font-family: "Shrikhand", cursive;
   margin-block: 0rem;
   margin-top: 1rem;
-  margin-left: 15%;
 }
 .intro__desc__description {
   width: 50%;
   padding: 0.5rem 2rem 0.5rem 2rem;
-  margin-left: 20%;
   box-shadow: inset 0px 0px 15px 0px #c5c5c5;
   border-radius: 1rem;
   text-align: center;
 }
 .intro__desc__button {
-  margin-left: 35%;
   width: 30%;
 }
 
@@ -155,6 +179,9 @@ body, html {
   margin-bottom: 1rem;
   text-align: center;
 }
+.ordering__backward {
+  display: none;
+}
 
 /*ALL PAGES*/
 h1 {
@@ -164,6 +191,7 @@ h1 {
 header {
   margin: 2rem;
   margin-left: 3rem;
+  width: 60%;
 }
 
 .footer {
@@ -179,11 +207,16 @@ header {
   white-space: nowrap;
 }
 .footer__links--WIcons {
-  width: 275px;
+  width: 400px;
+  justify-content: center;
 }
 .footer__links--WOIcons {
-  width: 275px;
-  margin-left: 1rem;
+  width: 400px;
+  justify-content: center;
+}
+.footer__links--WOIcons p, .footer__links--WOIcons a:link {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=tablet.css.map */
