@@ -249,7 +249,8 @@ header {
         background-color: $tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
-        transition-duration: .5s;
+        transition-duration: 0.5s;
+
 
         &__check-circle {
             position: absolute;
@@ -262,22 +263,24 @@ header {
             align-items: center;
             justify-content: center;
             border-radius: 100px;
-            transform: rotate(180def);
-            animation: rotate-right 2s 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
         }
     }
     &:hover &__confirmation {
         margin-right: -1rem;
+
     }
     
     &:hover &__check-circle {
-       transform: rotate(180deg);
-       transition-duration: 5s;
-
     }
 }
 .check-circle {
     color: $tertiary;
+    &:hover {
+        transition-duration: 0.5s;
+        animation: 0.7s 0.3s infinite RotateRight;
+
+    }
 }
 
 .ordering {
