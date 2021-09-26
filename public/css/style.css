@@ -295,12 +295,13 @@ header {
 .menu__card:hover .menu__card__confirmation {
   margin-right: -1rem;
 }
+.menu__card:hover .check-circle {
+  transition-duration: 0.5s;
+  animation: 0.5s 0.1s RotateRight;
+}
+
 .check-circle {
   color: #99E2D0;
-}
-.check-circle:hover {
-  transition-duration: 0.5s;
-  animation: 0.7s 0.3s infinite RotateRight;
 }
 
 .ordering {
