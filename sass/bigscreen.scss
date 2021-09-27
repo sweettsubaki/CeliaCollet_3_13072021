@@ -106,25 +106,29 @@ body, html {
 /*Menu Page*/
 
 .hero {
+   display: flex;
+   justify-content: center;
    &__figure {
       border-radius: 2rem;
       height: 500px !important;
       width: auto;
+      @include border-primary ;
    }
 }
 
 .menu-header {
    justify-content: space-between !important;
-   margin-left: 2rem;
-   margin-right: 2rem;
+   margin-left: 20%;
+   margin-right: 20%;
 }
 
 .course-title {
-   margin-left: 2rem;
+   margin-top: 5rem;
+   margin-left: 20%;
 }
 
 .menu__card {
-   width: 85%;
+   width: 60%;
    margin: auto;
    margin-bottom: 2rem;
    &:hover {
@@ -135,14 +139,14 @@ body, html {
 .ordering {
    margin-bottom: 1rem;
    text-align: center;
-
+   display: flex;
+   justify-content: space-between;
    &__button {
-      width: 30%;
+      width: 20%;
    }
-
    &__backward {
       display: block;
-      width: 30%;
+      width: 20%;
       background: none;
       @include grey-shades($amount: 70%);
       color: black;
@@ -173,7 +177,8 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       overflow: hidden;
-      white-space: nowrap;&--WIcons {
+      white-space: nowrap;
+      &--WIcons {
          width: 400px;
          justify-content: center;
       }
