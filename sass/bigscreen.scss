@@ -2,17 +2,15 @@
 @import 'Utils/mixins';
 @import 'Layouts/tablet.scss';
 @import 'Utils/keyframes.scss';
-/*body
-    header
-    container
-        intro
-        explanation
-        resto
-            resto__cards
-                resto__cards__card
-    footer    */
+
+
 body, html {
    text-align: left;
+}
+
+.loader__inner > img {
+   height: 400px;
+   width: 400px;
 }
 
 /*HOMEPAGE*/
