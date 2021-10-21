@@ -15,7 +15,7 @@
 </head>
 <body>
    <!--Start header -->
-   <header >
+   <header class="page-header">
       <div class="backmenu">
          <a href="index.html">
             <i class="fas fa-arrow-left fa-lg backmenu__arrow"></i>
@@ -25,14 +25,14 @@
    </header>
    <!--End header -->
 
-   <section class="hero">
+   <div class="hero">
       <figure>
          <img class="resto__cards__card__figure hero__figure" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
       </figure>
-   </section>
+   </div>
 
    <!--Start page container -->
-   <section class="menu-container">
+   <div class="menu-container">
       <section class="menu-header">
          <h1>La palette du goût</h1>
          <div class="fave">
@@ -202,16 +202,16 @@
          </div>
       </section>
       <!--End Dessert-->
-   </section>
+   </div>
    <!--End Page container -->
 
    <!--Start Ordering-->
-   <section class="ordering">
-      <button class="button ordering__backward">
-         <a href="index.html">Retour à l'accueil</a>
+   <div class="ordering">
+      <button onclick="window.location.href='index.html';" class="button ordering__backward">
+         Retour à l'accueil
       </button>
       <button class="button ordering__button">Commander</button>
-   </section>
+   </div>
    <!--End Ordering-->
 
    <!--Start Footer -->

@@ -114,12 +114,17 @@ body, html {
   margin-right: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
   white-space: nowrap;
 }
 .explanation__list__ol li {
-  width: 28%;
+  width: 15%;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+}
+.explanation__list__ol__p {
+  font-size: 18px;
 }
 
 .resto {
@@ -154,6 +159,11 @@ body, html {
 }
 
 /*Menu Page*/
+.page-header {
+  width: 50%;
+  margin-left: 3rem;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -183,6 +193,16 @@ body, html {
 }
 .menu__card:hover {
   background-color: #f7f2fc;
+}
+
+.menu__card__caption__text__plate-name {
+  font-size: 22px;
+}
+.menu__card__caption__text__plate-description {
+  font-size: 18px;
+}
+.menu__card__caption__price > h3 {
+  font-size: 18px;
 }
 
 .ordering {

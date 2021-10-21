@@ -61,7 +61,9 @@ body, html {
     overflow: hidden;
     white-space: nowrap;
     li {
-        width: 35%;
+        width: 20%;
+        justify-content: space-between;
+        margin: 0.5rem 3.5rem;
     }
 
 

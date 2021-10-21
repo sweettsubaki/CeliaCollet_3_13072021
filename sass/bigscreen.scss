@@ -62,11 +62,13 @@ body, html {
    margin-right: 1.5rem;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-evenly;
    overflow: hidden;
    white-space: nowrap;
    li {
-      width: 28%;
+      width: 10%;
+      justify-content: space-between;
+      margin: 0.5rem 2rem;
    }
 }
 
@@ -131,6 +133,14 @@ body, html {
    margin-bottom: 2rem;
    &:hover {
       @include light-primary($amount: 37%);
+   }
+}
+.menu__card__caption__text{
+   &__plate-name{
+      font-size: 22px
+   }
+   &__plate-description{
+      font-size: 18px;
    }
 }
 

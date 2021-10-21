@@ -58,7 +58,7 @@
 body, html {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin: 0rem;
+  margin: auto;
 }
 
 .loader {
@@ -118,7 +118,7 @@ p {
   background-color: #fafafa;
 }
 .intro__desc__description {
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 2rem 1rem 2rem;
 }
 
 .explanation__list__ol {
@@ -220,11 +220,25 @@ p {
   text-align: center;
 }
 
-header {
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
+  margin: 1rem;
+}
+
+.First-Course, .Main-Course, .Dessert {
+  margin: auto;
+  text-align: left;
+  margin: 0rem;
+}
+
+.course-title {
+  margin-left: 1rem;
+  text-align: left;
+  border-bottom: #99E2D0 solid 3px;
+  width: 60px;
 }
 
 .menu-header {
@@ -253,11 +267,11 @@ header {
   animation: ApparitionTransition 2s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
-  height: 70px;
+  height: 50px;
   width: 85%;
   background-color: #fff;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 12px -1px #000000;
   display: flex;
@@ -276,7 +290,6 @@ header {
 }
 .menu__card__caption__text {
   height: 95%;
-  max-width: 290px;
   margin: 0rem;
   display: flex;
   flex-direction: column;
