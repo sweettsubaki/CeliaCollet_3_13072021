@@ -9,3 +9,6 @@
 @mixin grey-shades ($amount: 95.35%) {
     background-color: lighten(#000, $amount);
 }
+@mixin button-light($direction, $list) {
+    background: linear-gradient($direction, $gradient-list);
+}
