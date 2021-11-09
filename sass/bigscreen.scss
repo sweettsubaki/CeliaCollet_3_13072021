@@ -6,6 +6,8 @@
 
 body, html {
    text-align: left;
+   display: flex;
+   flex-direction: column;
 }
 
 .loader__inner > img {
@@ -177,6 +179,7 @@ header {
 }
 
 .footer {
+   margin-top:auto; 
    display: flex;
    flex-direction: column;
    align-items: center;

@@ -5,8 +5,9 @@
 
 body, html {
     text-align: left;
-    background: beige;
     min-width: 1025px
+    display: flex;
+    flex-direction: column;
 }
 
 /*HOMEPAGE*/
@@ -191,6 +192,7 @@ header {
 }
 
 .footer {
+   margin-top:auto; 
    display: flex;
    flex-direction: column;
    align-items: center;

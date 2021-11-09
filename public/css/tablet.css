@@ -58,6 +58,8 @@
 body, html {
   text-align: left;
   min-width: 481px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*HOMEPAGE*/

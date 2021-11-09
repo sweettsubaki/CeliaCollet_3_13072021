@@ -7,6 +7,9 @@ body, html {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .loader {
@@ -407,6 +410,8 @@ a:hover {
 }
 
 .footer {
+    margin-top:auto; 
+    width: 100%;
     text-align: start;
     background-color: #353535;
     color: #ffffff;
