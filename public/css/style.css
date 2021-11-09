@@ -154,7 +154,6 @@ p {
 .explanation__list__ol li:hover {
   background-color: #e4d5f6;
   cursor: pointer;
-  transform: scale(1.2);
   transition: 0.5s;
 }
 
@@ -178,7 +177,6 @@ p {
   position: relative;
 }
 .resto__cards__card:hover {
-  transform: scale(1.2);
   transition: 0.5s;
 }
 .resto__cards__card__figure {
@@ -367,7 +365,6 @@ a:visited {
 
 a:hover {
   cursor: pointer;
-  transform: scale(1.2);
 }
 
 /*a:active*/
