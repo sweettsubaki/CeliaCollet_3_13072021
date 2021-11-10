@@ -242,6 +242,13 @@ p {
   width: 60px;
 }
 
+.menu-container {
+  border-radius: 50px 50px 0px 0px;
+  margin-top: -3rem;
+  background: #fff;
+  padding-left: 0.5rem;
+}
+
 .menu-header {
   display: flex;
   justify-content: space-around;
