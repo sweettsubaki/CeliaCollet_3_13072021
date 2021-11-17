@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/style.css ./sass/tablet.scss:public/css/tablet.css ./sass/compscreen.scss:public/css/compscreen.css ./sass/bigscreen.scss:public/css/bigscreen.css"
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css  ./sass/bigphones.scss:public/css/bigphones.css ./sass/tablet.scss:public/css/tablet.css ./sass/laptop.scss:public/css/laptop.css ./sass/compscreen.scss:public/css/compscreen.css ./sass/bigscreen.scss:public/css/bigscreen.css"
   },
   "repository": {
     "type": "git",
