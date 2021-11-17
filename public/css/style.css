@@ -448,10 +448,6 @@ a:hover {
   opacity: 0;
 }
 
-i.far, i.fas, i.fa-heart {
-  background-clip: text;
-}
-
 .footer {
   margin-top: auto;
   width: 100%;
