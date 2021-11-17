@@ -397,7 +397,7 @@ a:hover {
     &__filledheart {
         right: 0;
         transition-duration: .25s;
-        background-color: #f6f6f6;
+        background-color: #fff;
         mix-blend-mode: lighten;
     }
     &__filledheart:hover {
@@ -409,7 +409,7 @@ a:hover {
         position: absolute;
         right: 0;
         transition-duration: .25s;
-        background-color: #f6f6f6;
+        background-color: #fff;
        
         mix-blend-mode: lighten;
         &:hover {
