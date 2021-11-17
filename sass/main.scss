@@ -87,15 +87,17 @@ p {
         counter-increment: item;
         margin: 0.5rem;
         height: 75px;
-        width: 90%;
+        width: 80%;
         background-color: $grey-bg1;
         font-weight: bold;
         border-radius: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
         &::before {
-            margin-left: -3rem;
+            margin-left: -2rem;
             content: counter(item);
             color: white;
             width: 25px;
@@ -121,7 +123,7 @@ p {
     .resto__cards {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
 
     }
 }
@@ -133,7 +135,7 @@ p {
     overflow: hidden;
     margin: 1rem;
     height: 250px;
-    width: 335px;
+    width: 80%;
     position: relative;
     &:hover {
         transition: 0.5s;
@@ -148,7 +150,7 @@ p {
     &__caption {
         border: #ffffff 5px solid;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 75px;
         width: 100%;
@@ -415,6 +417,9 @@ a:hover {
 
         }
     }
+}
+i.far, i.fas, i.fa-heart {
+    background-clip: text;
 }
 
 .footer {
