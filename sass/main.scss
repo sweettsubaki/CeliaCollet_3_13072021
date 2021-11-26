@@ -70,6 +70,10 @@ p {
     }
     &__desc {
         @include grey-shades ($amount: 96.5%);
+
+        &__title {
+            font-family: 'Shrikhand', cursive;
+         }
         &__description {
             padding: 0rem 2rem 1rem 2rem;
         }
@@ -123,7 +127,13 @@ p {
 
 //START Explanation
 .resto {
+    background-color: $grey-bg1;
     margin: auto;
+    &__title{
+        text-align: left;
+        margin-left: 1.5rem;
+        padding-top: 3rem;
+    }
     .resto__cards {
         display: flex;
         align-items: center;
@@ -138,8 +148,8 @@ p {
     background-color: #ffffff;
     overflow: hidden;
     margin: 1rem;
-    height: 220px;
-    width: 200px;
+    height: 290px;
+    width: 390px;
     position: relative;
     &:hover {
         transition: 0.5s;
@@ -147,9 +157,10 @@ p {
     &__figure {
         margin-block: 0rem;
         margin-inline: 0rem;
-        height: 155px;
-        width: 100%;
+        height: 220px;
+        width: 400px;
         border-radius: 2rem 2rem 0rem 0rem;
+        object-fit: cover;
     }
     &__caption {
         border: #ffffff 5px solid;
