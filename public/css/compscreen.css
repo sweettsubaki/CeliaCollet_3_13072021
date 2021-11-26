@@ -114,17 +114,20 @@ body, html {
 .explanation__list__ol {
   margin-right: 1.5rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   overflow: hidden;
   white-space: nowrap;
 }
 .explanation__list__ol li {
-  width: 15%;
   justify-content: space-between;
   margin: 0.5rem 2rem;
   padding-left: 3.5rem;
   padding-right: 0.5rem;
+}
+.explanation__list__ol li::before {
+  margin-left: -4rem;
 }
 .explanation__list__ol__p {
   font-size: 18px;
@@ -136,12 +139,6 @@ body, html {
 .resto__cards {
   width: 100%;
   display: flex !important;
-  flex-wrap: wrap;
-  flex-direction: row !important;
-  align-items: flex-start !important;
-  justify-content: center;
-  margin: 2rem;
-  margin-left: 0rem;
   margin-top: 1rem;
 }
 .resto__cards__card {

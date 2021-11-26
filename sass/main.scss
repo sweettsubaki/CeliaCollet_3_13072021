@@ -63,12 +63,13 @@ p {
 //CONTAINER
 //START Intro
 .intro {
+    background-color: $grey-bg1;
     margin: 1rem;
     &__location {
-        @include grey-shades;
+        @include grey-shades ($amount: 91.9%);
     }
     &__desc {
-        @include grey-shades ($amount: 98%);
+        @include grey-shades ($amount: 96.5%);
         &__description {
             padding: 0rem 2rem 1rem 2rem;
         }
@@ -78,16 +79,19 @@ p {
 //END INTRO
 //START EXPLANATION
 .explanation__list__ol {
+    display: flex;
    list-style: none;
    counter-reset: item;
     margin-block: 0;
     padding-inline-start: 0.25rem;
+    flex-direction: column;
+
  
     li {
         counter-increment: item;
         margin: 0.5rem;
         height: 75px;
-        width: 80%;
+        width: 250px;
         background-color: $grey-bg1;
         font-weight: bold;
         border-radius: 1.5rem;
@@ -119,12 +123,12 @@ p {
 
 //START Explanation
 .resto {
-    margin: 0rem;
+    margin: auto;
     .resto__cards {
         display: flex;
-        flex-direction: column;
         align-items: center;
-
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -134,8 +138,8 @@ p {
     background-color: #ffffff;
     overflow: hidden;
     margin: 1rem;
-    height: 250px;
-    width: 80%;
+    height: 220px;
+    width: 200px;
     position: relative;
     &:hover {
         transition: 0.5s;
@@ -143,7 +147,7 @@ p {
     &__figure {
         margin-block: 0rem;
         margin-inline: 0rem;
-        height: 175px;
+        height: 155px;
         width: 100%;
         border-radius: 2rem 2rem 0rem 0rem;
     }
@@ -152,11 +156,11 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 75px;
+        height: 40px;
         width: 100%;
         background-color: #ffffff;
         position: relative;
-        &__text{
+        &__text {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -347,6 +351,9 @@ a:hover {
 }
 /*a:active*/
 
+header {
+    margin-top: 0.5rem;
+}
 
 .button {
     height: 50px;
@@ -368,8 +375,7 @@ a:hover {
 .fave {
     position: absolute;
     right: 20px;
-    background-color: transparent;
-    border: transparent 0px solid;
+    border: none;
     padding: 0;
     display:flex;
     align-items:center;
@@ -377,6 +383,7 @@ a:hover {
     cursor: pointer;
     position: relative;
     background-color: black;
+    line-height: 20px;
 
     &:hover::before {
         opacity: 1;
@@ -399,6 +406,8 @@ a:hover {
         transition-duration: .25s;
         background-color: #fff;
         mix-blend-mode: lighten;
+
+
     }
     &__filledheart:hover {
         animation: heart-ani 0.3s forwards;
@@ -410,15 +419,20 @@ a:hover {
         right: 0;
         transition-duration: .25s;
         background-color: #fff;
-       
         mix-blend-mode: lighten;
+      
+
+
         &:hover {
             opacity: 0;
 
         }
     }
 }
-
+i{
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
 .footer {
     margin-top:auto; 
@@ -442,6 +456,11 @@ a:hover {
             cursor: pointer;
         }
         &--WOIcons {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 0.2rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
             a:link {
                 text-decoration: none;
                 color: #ffffff;

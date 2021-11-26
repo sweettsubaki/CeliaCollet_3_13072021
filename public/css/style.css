@@ -112,29 +112,32 @@ p {
 }
 
 .intro {
+  background-color: #f6f6f6;
   margin: 1rem;
 }
 .intro__location {
-  background-color: #f3f3f3;
+  background-color: #eaeaea;
 }
 .intro__desc {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
 }
 .intro__desc__description {
   padding: 0rem 2rem 1rem 2rem;
 }
 
 .explanation__list__ol {
+  display: flex;
   list-style: none;
   counter-reset: item;
   margin-block: 0;
   padding-inline-start: 0.25rem;
+  flex-direction: column;
 }
 .explanation__list__ol li {
   counter-increment: item;
   margin: 0.5rem;
   height: 75px;
-  width: 80%;
+  width: 250px;
   background-color: #f6f6f6;
   font-weight: bold;
   border-radius: 1.5rem;
@@ -163,12 +166,13 @@ p {
 }
 
 .resto {
-  margin: 0rem;
+  margin: auto;
 }
 .resto .resto__cards {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .resto__cards__card {
@@ -177,8 +181,8 @@ p {
   background-color: #ffffff;
   overflow: hidden;
   margin: 1rem;
-  height: 250px;
-  width: 80%;
+  height: 220px;
+  width: 200px;
   position: relative;
 }
 .resto__cards__card:hover {
@@ -187,7 +191,7 @@ p {
 .resto__cards__card__figure {
   margin-block: 0rem;
   margin-inline: 0rem;
-  height: 175px;
+  height: 155px;
   width: 100%;
   border-radius: 2rem 2rem 0rem 0rem;
 }
@@ -196,7 +200,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 40px;
   width: 100%;
   background-color: #ffffff;
   position: relative;
@@ -382,6 +386,10 @@ a:hover {
 }
 
 /*a:active*/
+header {
+  margin-top: 0.5rem;
+}
+
 .button {
   height: 50px;
   width: 50%;
@@ -402,8 +410,7 @@ a:hover {
 .fave {
   position: absolute;
   right: 20px;
-  background-color: transparent;
-  border: transparent 0px solid;
+  border: none;
   padding: 0;
   display: flex;
   align-items: center;
@@ -411,6 +418,7 @@ a:hover {
   cursor: pointer;
   position: relative;
   background-color: black;
+  line-height: 20px;
 }
 .fave:hover::before {
   opacity: 1;
@@ -448,6 +456,11 @@ a:hover {
   opacity: 0;
 }
 
+i {
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .footer {
   margin-top: auto;
   width: 100%;
@@ -472,6 +485,11 @@ a:hover {
   margin: 1rem;
 }
 .footer__links--WOIcons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   /*a:active*/
 }
 .footer__links--WOIcons a:link {

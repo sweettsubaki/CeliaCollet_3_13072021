@@ -1,3 +1,216 @@
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes bounce {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+  25% {
+    transform: translate3d(0, 30px, 0);
+  }
+  27% {
+    transform: translate3d(0, 60px, 0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate3d(0, 30px, 0);
+  }
+  75% {
+    transform: translate3d(0, 60px, 0);
+  }
+  77% {
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+@keyframes heart-ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ApparitionTransition {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes RotateRight {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body, html {
+  text-align: left;
+  min-width: 481px;
+  display: flex;
+  flex-direction: column;
+}
 
+/*HOMEPAGE*/
+.intro {
+  margin-left: 0rem;
+  margin-bottom: 2.5rem;
+  height: 200px;
+  width: 100%;
+}
+.intro__location {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.intro__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.intro__desc__title {
+  font-family: "Shrikhand", cursive;
+  margin-block: 0rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.intro__desc__description {
+  width: 50%;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  box-shadow: inset 0px 0px 15px 0px #c5c5c5;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.intro__desc__button {
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.explanation__title, .resto__title {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.explanation__list__ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.explanation__list__ol li {
+  margin: 0.5rem 2rem;
+}
+
+.resto {
+  width: 100%;
+}
+.resto__cards {
+  width: 100%;
+  display: flex !important;
+}
+.resto__cards__card__figure {
+  height: 145px;
+}
+.resto__cards__card__caption {
+  height: 50px;
+  justify-content: space-between;
+  padding-left: 0.6rem;
+}
+.resto__cards__card__caption__text {
+  height: 90%;
+  justify-content: space-between;
+}
+
+/*Menu Page*/
+.page-header {
+  width: 60%;
+}
+
+.hero__figure {
+  border-radius: 2rem;
+  height: 500px !important;
+}
+
+.menu-header {
+  justify-content: space-between !important;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.course-title {
+  margin-left: 2rem;
+}
+
+.menu__card {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.menu__card:hover {
+  background-color: #f7f2fc;
+}
+
+.ordering {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.ordering__backward {
+  display: none;
+}
+
+/*ALL PAGES*/
+h1 {
+  font-size: x-large;
+}
+
+header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.footer__links--WIcons {
+  width: 400px;
+  justify-content: center;
+}
+.footer__links--WOIcons {
+  width: 400px;
+  justify-content: center;
+}
+.footer__links--WOIcons p, .footer__links--WOIcons a:link {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=bigphones.css.map */

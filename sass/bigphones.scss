@@ -1,0 +1,180 @@
+
+@import 'Utils/variables.scss';
+@import 'Utils/mixins';
+@import 'Layouts/tablet.scss';
+@import 'Utils/keyframes.scss';
+
+
+body, html {
+    text-align: left;
+    min-width: 481px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HOMEPAGE*/
+
+.intro {
+    margin-left: 0rem;
+    margin-bottom: 2.5rem;
+    height: 200px;
+    width: 100%;
+    &__location {
+        text-align: center;    
+        font-size: large;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        &__title {
+            font-family: 'Shrikhand', cursive;
+            margin-block: 0rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        &__description {
+            width: 50%;
+            padding: 0.5rem 2rem 0.5rem 2rem;
+            box-shadow: inset 0px 0px 15px 0px #c5c5c5;
+            border-radius: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        &__button {
+            width: 30%;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.explanation__title, .resto__title {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.explanation__list__ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    li {
+      //  justify-content: space-between;
+        margin: 0.5rem 2rem;
+      //  padding-left: 3.5rem;
+        //padding-right: 0.5rem;
+    }
+
+
+}
+
+.resto {
+    width: 100%;
+    &__cards {
+        width: 100%;
+        display: flex !important;
+        &__card {
+            //width: 335px;
+            //height: 210px;
+            &__figure {
+                height: 145px;
+            }
+            &__caption {
+                height: 50px;
+                justify-content: space-between;
+                padding-left: 0.6rem;
+                &__text {
+                    height: 90%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+/*Menu Page*/
+
+.page-header{
+    width: 60%;
+}
+
+.hero {
+    &__figure {
+        border-radius: 2rem;
+        height: 500px !important;
+    }
+}
+
+.menu-header {
+    justify-content: space-between !important;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.course-title {
+    margin-left: 2rem;
+}
+
+.menu__card {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2rem;
+    &:hover {
+        @include light-primary($amount: 37%);
+    }
+}
+
+.ordering {
+    margin-bottom: 1rem;
+    text-align: center;
+    &__backward {
+        display: none;
+    }
+}
+
+/*ALL PAGES*/
+
+h1 {
+    font-size: x-large;
+}
+
+header {
+    margin-top: 1rem;
+   text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+        white-space: nowrap;
+        &--WIcons {
+            width: 400px;
+            justify-content: center;
+         }
+         &--WOIcons {
+            width: 400px;
+            justify-content: center;
+            p, a:link {
+               display: flex;
+               justify-content: center;
+            }
+         }
+    }
+    
+}
