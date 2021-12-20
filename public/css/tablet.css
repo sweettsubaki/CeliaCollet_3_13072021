@@ -57,9 +57,11 @@
 }
 body, html {
   text-align: left;
-  min-width: 481px;
+  min-width: 769px;
+  max-width: 992px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 /*HOMEPAGE*/
@@ -146,11 +148,18 @@ body, html {
 /*Menu Page*/
 .page-header {
   width: 60%;
+  padding-left: 2%;
 }
 
 .hero__figure {
   border-radius: 2rem;
   height: 500px !important;
+  width: 100% !important;
+}
+
+.menu-container {
+  margin-top: -4rem !important;
+  padding-left: 2rem;
 }
 
 .menu-header {

@@ -60,6 +60,8 @@ body, html {
   min-width: 1025px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
 /*HOMEPAGE*/
@@ -161,7 +163,7 @@ body, html {
 /*Menu Page*/
 .page-header {
   width: 50%;
-  margin-left: 3rem;
+  margin-left: -30%;
 }
 
 .hero {
@@ -171,14 +173,19 @@ body, html {
 .hero__figure {
   border-radius: 2rem;
   height: 500px !important;
-  width: auto;
+  width: 990px;
   border: 5px outset #e4d5f6;
+}
+
+.menu-container {
+  margin-top: -5rem;
+  width: 990px;
 }
 
 .menu-header {
   justify-content: space-between !important;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .course-title {
